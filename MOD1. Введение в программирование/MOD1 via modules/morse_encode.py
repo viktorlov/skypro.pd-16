@@ -11,3 +11,5 @@ def morse_encode(arg):
     функция для кодировки английских слов (и фраз) в азбуку Морзе
     """
     return ' '.join([' ' if letter == ' ' else morse_code[letter.lower()] for letter in str(arg)])
+
+#%%

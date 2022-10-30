@@ -21,3 +21,5 @@ for each in tries:
         print(f'Неверно! Это {word_to_code}\n')
         answers.append(False)
 print_statistics(answers)
+
+#%%

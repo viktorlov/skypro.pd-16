@@ -5,8 +5,8 @@ def hours_to_days(hours, period=24):
     return hours // period
 
 
-# print(hours_to_days(48)) # Вернет 2
-# print(hours_to_days(12)) # Вернет 0
+# print(hours_to_days(48))  # Вернет 2
+# print(hours_to_days(12))  # Вернет 0
 # print(hours_to_days(36, 12))  # Вернет 3
 
 
