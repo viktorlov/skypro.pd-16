@@ -22,4 +22,4 @@ for each in tries:
         answers.append(False)
 print_statistics(answers)
 
-#%%
+# %%
