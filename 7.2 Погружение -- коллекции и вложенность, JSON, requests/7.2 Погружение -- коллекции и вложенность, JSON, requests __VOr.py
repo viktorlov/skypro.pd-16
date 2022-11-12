@@ -42,8 +42,10 @@ def show_tableau(arg_dict):
     :param arg_dict: словарь not asked questions
     :type arg_dict: dict
     """
+    print('-' * 44)
     for key_, value_ in not_asked(arg_dict).items():
-        print("{:<16} {:<10} {:<10} {:<10}".format(key_, *value_))
+        print(" {:<16} {:<10} {:<10} {:<10}".format(key_, *value_))
+    print('-' * 44, end='\n')
 
 
 def check_string_format(arg, length=7, element=2):
@@ -176,18 +178,21 @@ def writing_scoring(arg_scoring):
     with open('overall_results.json', 'w') as file1:
         json.dump(results, file1)
 
+
 # ------------------------------------------------------------------------------
 # начало основной программы
+scoring = [0, 0, 0]
+games = 9
+for _ in range(games):
+    show_tableau(questions)
+    category, cost = user_request()
+    question, correct_answer = get_question(category, cost)
+    scoring = round_qa(question, correct_answer, cost,
+                       scoring[0], scoring[1], scoring[2])
+    do_asking(category, cost)
+writing_scoring(scoring)
+print(f'''У нас закончились вопросы. Игра окончена!
 
-
-
-
-
-
-# ------------------------------------------------------------------------------
-# if __name__ == '__main__':
-#     print(77 * '-', end='\n\n')
-#     print(not_asked(questions))
-#     show_tableau(questions)
-#     print(get_question(category, cost))
-#     print(round_qa('apple', 'яблоко', '100'))
+Ваш счёт:         {scoring[0]}
+Верных ответов:   {scoring[1]}
+Неверных ответов: {scoring[2]}''')
