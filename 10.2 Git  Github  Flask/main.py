@@ -10,9 +10,9 @@ def page_index():
     candidates = get_all()
     result = '<br>'
     for each in candidates:
-        result += 'Имя кандидата - ' + each['name'] + '<br>'
-        result += 'Позиция кандидата - ' + each['position'] + '<br>'
-        result += 'Навыки кандидата - ' + each['skills'] + '<br>'
+        result += 'Имя кандидата - {0}<br>'.format(each['name'])
+        result += 'Позиция кандидата - {0}<br>'.format(each['position'])
+        result += 'Навыки кандидата - {0}<br>'.format(each['skills'])
         result += '<br>'
     return f'<pre> {result} </pre>'
 

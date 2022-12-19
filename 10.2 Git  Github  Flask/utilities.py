@@ -8,7 +8,7 @@ def get_all() -> list[str]:
     return load_candidates()
 
 
-def get_by_pk(arg: int) -> str:
+def get_by_pk(arg: int) -> str | bool:
     for each in get_all():
         if each['pk'] == arg:
             return each
