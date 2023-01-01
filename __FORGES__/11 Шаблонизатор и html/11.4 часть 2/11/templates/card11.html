@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11.4 часть 2, задача 11: card11.html</title>
+</head>
+<body>
+
+<!-- Шаблон -->
+
+<h2>Профиль пользователя</h2><br>
+{% for each in arg %}
+    <p>Имя: {{ each['name'] }}</p>
+    <p>Телефон: {{ each['phone'] }}</p>
+    <p>Почта: {{ each['email'] }}</p><br>
+{% endfor %}
+
+</body>
+</html>

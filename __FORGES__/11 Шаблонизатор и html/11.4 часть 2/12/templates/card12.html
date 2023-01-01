@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11.4 часть 2, задача 12: card12.html</title>
+</head>
+<body>
+
+<!-- Шаблон -->
+
+{% for each in arg %}
+    <p>Индекс: {{ each['postalZip'] }}</p>
+    <p>Адрес: {{ each['address'] }}</p><br>
+{% endfor %}
+
+</body>
+</html>
