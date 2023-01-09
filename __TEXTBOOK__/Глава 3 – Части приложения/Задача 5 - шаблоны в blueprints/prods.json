@@ -1,0 +1,27 @@
+[
+  {
+    "pk": 1,
+    "name": "milk",
+    "unit_price": 50
+  },
+  {
+    "pk": 2,
+    "name": "sugar",
+    "unit_price": 30
+  },
+  {
+    "pk": 3,
+    "name": "cookies",
+    "unit_price": 50
+  },
+  {
+    "pk": 4,
+    "name": "corn-flakes",
+    "unit_price": 70
+  },
+  {
+    "pk": 5,
+    "name": "nutella",
+    "unit_price": 125
+  }
+]

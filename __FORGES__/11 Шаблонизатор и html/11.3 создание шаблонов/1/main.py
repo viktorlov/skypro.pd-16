@@ -12,7 +12,7 @@ def index():
 
 @app.route('/card/')
 def card():
-    return render_template('card.html', arg = SOMEDICT)
+    return render_template('card.html', arg=SOMEDICT)
 
 
 if __name__ == '__main__':

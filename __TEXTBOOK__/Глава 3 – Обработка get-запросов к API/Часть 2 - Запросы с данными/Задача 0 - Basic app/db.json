@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Аpple green",
+    "cat": "fruit",
+    "kcal": 45
+  },
+  {
+    "name": "Apple red",
+    "cat": "fruit",
+    "kcal": 49
+  },
+  {
+    "name": "Banana",
+    "cat": "fruit",
+    "kcal": 95
+  },
+  {
+    "name": "Avocado",
+    "cat": "fruit",
+    "kcal": 160
+  },
+  {
+    "name": "omato",
+    "cat": "veggie",
+    "kcal": 20
+  },
+  {
+    "name": "Broccoli",
+    "cat": "veggie",
+    "kcal": 34
+  },
+  {
+    "name": "Carrot",
+    "cat": "veggie",
+    "kcal": 100
+  },
+  {
+    "name": "Cookie",
+    "cat": "sweets",
+    "kcal": 514
+  },
+  {
+    "name": "Donut",
+    "cat": "sweets",
+    "kcal": 300
+  },
+  {
+    "name": "Cake",
+    "cat": "sweets",
+    "kcal": 400
+  }
+]
