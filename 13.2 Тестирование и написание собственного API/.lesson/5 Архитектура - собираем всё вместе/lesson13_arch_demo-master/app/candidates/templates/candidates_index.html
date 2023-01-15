@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Кандидаты</p>
+{% for candidate in candidates %}
+	<p>{{ candidate.name }} {{ candidate.position }}</p>
+{% endfor %}
+</body>
+</html>

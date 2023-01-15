@@ -14,24 +14,16 @@ def save_books_to_json(books):
     """
     Сохраняет список словарей в json-файл
     """
-
     with open("books.json", "w", encoding="utf-8") as file:
         json.dump(books, file, ensure_ascii=False)
 
 
 def get_books():
-    """
-
-    :return:
-    """
     books = load_books_from_json()
     return books
 
 
 def get_book_by_id(book_id):
-    """
-    :param book_id: id книги
-    """
     books = load_books_from_json()
     for book in books:
         if book["id"] == book_id:
@@ -40,9 +32,8 @@ def get_book_by_id(book_id):
 
 def add_book(book_data):
     """
-    :param book_data: словарь с данными книги
+    :param book_data: dict
     """
-
     books = load_books_from_json()
     last_book = books[-1]
     last_id = last_book["id"]
@@ -57,9 +48,7 @@ def update_book(book_id, book_data):
     """
     Обновляет книгу с нужным book_id
     :param book_id: id книги
-    :param book_data: ...
     """
-
     books = load_books_from_json()
     for book in books:
         if book["id"] == book_id:
@@ -73,7 +62,6 @@ def delete_book(book_id):
     Удаляет книгу с указанным book_id
     :param book_id: id книги
     """
-
     books = load_books_from_json()
     for index, book in enumerate(books):
         if book["id"] == book_id:
