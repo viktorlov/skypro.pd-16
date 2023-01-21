@@ -35,7 +35,7 @@
   - [css](static%2Fcss) # директория стилей
   - [img](static%2Fimg) # директория картинок и аватарок
 
-## [templates](templates) # директория неиспользуемых шаблоны
+## [templates](templates) # директория неиспользуемых шаблонов
   - [bookmarks.html](templates%2Fbookmarks.html) # шаблон поиска по закладкам 
   
 ## [tests](tests) # директория тестов
