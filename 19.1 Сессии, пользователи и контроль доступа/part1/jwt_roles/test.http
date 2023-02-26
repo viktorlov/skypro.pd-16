@@ -1,0 +1,13 @@
+POST http://127.0.0.1:5000/books
+Content-Type: application/json
+Authorization: Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IlNreXBybyIsInJvbGUiOiJhZG1pbiJ9.fMPkh9GNQMlLRxO0PmvCjUPPwX0t4CM5Wk4ATt35mNY
+{
+}
+
+###
+
+GET http://127.0.0.1:5000/books
+Accept: application/json
+
+###
+
